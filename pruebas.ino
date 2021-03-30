@@ -9,7 +9,8 @@ void setup(){
   pinMode(LED_2, INPUT);
   pinMode(LED_3, INPUT);
 
-  state = 10;
+
+  state = 9;
 }
 
 void loop(){
@@ -35,16 +36,6 @@ void loop(){
       digitalWrite(LED_2, LOW);
       digitalWrite(LED_3, HIGH);
       state = 4;
-    break;
-
-    case 4:
-      digitalWrite(LED_2, HIGH);
-      digitalWrite(LED_3, HIGH);
-      state = 1;
-    break;
-
-    default:
-        state = 2;
     break;
   }
   /* Aqui termina la interfaz de usuario
