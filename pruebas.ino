@@ -6,8 +6,8 @@ int LED_3   = 5;
 
 
 void setup(){
-  pinMode(LED_2, OUTPUT);
-  pinMode(LED_3, OUTPUT);
+  pinMode(LED_2, INPUT);
+  pinMode(LED_3, INPUT);
 
   state = 1;
 }
