@@ -1,8 +1,11 @@
-int state = 0;
+int state   = 0;
+int LED_0   = 2;
+int LED_1   = 3;
+
 
 void setup(){
-  pinMode(2, OUTPUT);
-  pinMode(3, OUTPUT);
+  pinMode(LED_0, OUTPUT);
+  pinMode(LED_1, OUTPUT);
 
   state = 1;
 }
@@ -11,21 +14,21 @@ void loop(){
 
   switch (state){
     case 1:
-      digitalWrite(2, LOW);
-      digitalWrite(3, LOW);
+      digitalWrite(LED_0, LOW);
+      digitalWrite(LED_1, LOW);
 
       state = 2;
     break;
 
     case 2:
-      digitalWrite(2, HIGH);
-      digitalWrite(3, LOW);
+      digitalWrite(LED_0, HIGH);
+      digitalWrite(LED_1, LOW);
       state = 3;
     break;
 
     case 3:
-      digitalWrite(2, LOW);
-      digitalWrite(3, HIGH);
+      digitalWrite(LED_0, LOW);
+      digitalWrite(LED_1, HIGH);
       state = 4;
     break;
 
