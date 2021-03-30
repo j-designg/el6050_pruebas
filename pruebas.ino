@@ -36,12 +36,6 @@ void loop(){
       digitalWrite(LED_3, HIGH);
       state = 4;
     break;
-
-    case 4:
-      digitalWrite(LED_2, HIGH);
-      digitalWrite(LED_3, HIGH);
-      state = 1;
-    break;
   }
   /* Aqui termina la interfaz de usuario
     */
