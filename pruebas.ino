@@ -9,7 +9,7 @@ void setup(){
   pinMode(LED_2, OUTPUT);
   pinMode(LED_3, OUTPUT);
 
-  state = 1;
+  state = 9;
 }
 
 void loop(){
