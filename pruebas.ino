@@ -12,6 +12,9 @@ void setup(){
 
 void loop(){
 
+    /* Aqui empieza la interfaz de usuario
+    */
+
   switch (state){
     case 1:
       digitalWrite(LED_0, LOW);
@@ -38,6 +41,8 @@ void loop(){
       state = 1;
     break;
   }
+  /* Aqui termina la interfaz de usuario
+    */
 
   delay(1000);
 }
